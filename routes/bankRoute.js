@@ -2,7 +2,7 @@ const router = require("express").Router();
 const customer = require("../controllers/customerController");
 const admin = require("../controllers/adminController");
 const verify = require("../middleware/tokenValidation");
-const OAuth = require("../controllers/OAuth");
+
 
 router.route("/register").post(customer.register);
 router.route("/login").post(customer.login);
